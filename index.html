@@ -64,11 +64,15 @@
         </section>
 
         <!--Form para url-->
-        <section class="flex justify-center items-center gap-x-4 
+        <section class="flex justify-center items-center
          bg-purple-950 bg-[url(/src/images/bg-shorten-desktop.svg)] bg-cover bg-no-repeat
          w-2/3 m-auto h-32 rounded-xl relative -bottom-16 px-6">
-          <input type="text" placeholder= "Shorten a link here..." class="bg-white w-1/2 h-1/2 rounded-xl p-2.5">
-          <input type="submit" value="Shorten It!" class="bg-blue-400 text-white font-medium cursor-pointer h-1/2 rounded-xl p-2.5">
+
+          <form action="#" class="w-full flex justify-center items-center gap-x-4">
+            <input type="text" placeholder= "Shorten a link here..." class="bg-white w-1/2 h-1/2 rounded-xl p-2.5" id="input_url" name="input_url">
+
+            <input type="submit" value="Shorten It!" class="bg-blue-400 text-white font-medium cursor-pointer h-1/2 rounded-xl p-2.5" id="btn-enviar">
+          </form>
         </section>
 
         <!--Secao 2-->
@@ -181,5 +185,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Vinicius</a>.
     </div>
+
+    <script src="src/js/app.js"></script>
   </body>
 </html>
