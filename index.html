@@ -1,128 +1,136 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="src/css/output.css">
-  
-  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
-</head>
-<body>
-  <main>
-    <header class="mx-36 my-6">
-      <nav class="flex justify-between items-center">
-        <div class="flex items-center">
-          <img src="src/images/logo.svg" alt="logo" class="pr-10">
-          <div class="flex gap-x-6">
-            <a href="">Features</a>
-            <a href="">Pricing</a>
-            <a href="">Resources</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="src/css/output.css" />
+
+    <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+  </head>
+  <body>
+    <main>
+      <!--Menu-->
+      <header class="mx-36 my-6">
+        <nav class="flex justify-between items-center">
+          <div class="flex items-center">
+            <img src="src/images/logo.svg" alt="logo" class="pr-10" />
+            <div class="flex gap-x-6">
+              <a href="">Features</a>
+              <a href="">Pricing</a>
+              <a href="">Resources</a>
+            </div>
           </div>
-        </div>
 
-        <div class="flex gap-x-6 items-center">
-          <a href="">Login</a>
-          <a href="" class="bg-blue-400 text-white p-2.5 w-30 text-center rounded-3xl">Sign Up</a>
-        </div>
-      </nav>
-    </header>
+          <div class="flex gap-x-6 items-center">
+            <a href="">Login</a>
+            <a
+              href=""
+              class="bg-blue-400 text-white p-2.5 w-30 text-center rounded-3xl"
+              >Sign Up</a
+            >
+          </div>
+        </nav>
+      </header>
 
-    <section class="home mx-36 mt-36 flex items-center justify-between">
-      <div class="flex flex-col">
-        <h1 class="font-bold text-8xl text-gray-900 pb-2.5">
-          More than just <br> shorter links
-        </h1>
-
-        <p class="text-3xl/normal text-gray-500 font-medium mb-10">
-          Build your brand’s recognition and get detailed <br> insights on how your links are performing.
-        </p>
-
-        <a href="" class="bg-blue-400 p-2.5 w-30 text-center text-white rounded-3xl">Get Started</a>
-      </div>
-
-      <div>
-        <img src="src/images/illustration-working.svg" alt="ilustracao working">
-      </div>
-    </section>
-
-    <section class="flex items-center flex-col bg-gray-400 py-10">
-      <div class="mx-36 flex flex-col items-center">
-        <h2 class="text-gray-900 font-bold text-4xl mb-6">Advanced Statistics</h2>
-        <p class="text-center text-gray-500 mb-6">
-          Track how your links are performing across the web with <br>
-          our advanced statistics dashboard.
-        </p>
-      </div>
-
-      <div class="flex gap-6 flex-wrap items-center justify-center">
-        <div class="flex basis-64 flex-col gap-y-5 bg-white p-6 rounded-2xl">
+        <!--Secao 1 Home-->
+        <section class="home mx-36 mt-36 flex items-center justify-between">
+          <div class="flex flex-col">
+            <h1 class="font-bold text-8xl text-gray-900 pb-2.5">
+              More than just <br />
+              shorter links
+            </h1>
+            <p class="text-3xl/normal text-gray-500 font-medium mb-10">
+              Build your brand’s recognition and get detailed <br />
+              insights on how your links are performing.
+            </p>
+            <a
+              href=""
+              class="bg-blue-400 p-2.5 w-30 text-center text-white rounded-3xl"
+              >Get Started</a
+            >
+          </div>
           <div>
-            <img src="src/images/icon-brand-recognition.svg" alt="">
+            <img
+              src="src/images/illustration-working.svg"
+              alt="ilustracao working"
+            />
           </div>
-          <h3>Brand Recognition</h3>
-          <p>
-            Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.
-          </p>
-        </div>
-        
-        <div class="flex basis-64 flex-col gap-y-5 bg-white p-6 rounded-2xl">
-          <div>
-            <img src="src/images/icon-brand-recognition.svg" alt="">
+        </section>
+
+        <!--Form para url-->
+        <section class="flex justify-center items-center gap-x-4 
+         bg-purple-950 bg-[url(/src/images/bg-shorten-desktop.svg)] bg-cover bg-no-repeat
+         w-2/3 m-auto h-32 rounded-xl relative -bottom-16 px-6">
+          <input type="text" placeholder= "Shorten a link here..." class="bg-white w-1/2 h-1/2 rounded-xl p-2.5">
+          <input type="submit" value="Shorten It!" class="bg-blue-400 text-white font-medium cursor-pointer h-1/2 rounded-xl p-2.5">
+        </section>
+
+        <!--Secao 2-->
+        <section class="flex items-center flex-col bg-gray-400 py-32">
+          <!--Titulo e Paragrafo da secao 2-->
+          <div class="mx-36 flex flex-col items-center">
+            <h2 class="text-gray-900 font-bold text-4xl mb-6">
+              Advanced Statistics
+            </h2>
+            <p class="text-center text-gray-500 mb-6">
+              Track how your links are performing across the web with <br />
+              our advanced statistics dashboard.
+            </p>
           </div>
-          <h3>Brand Recognition</h3>
-          <p>
-            Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.
-          </p>
-        </div>
-
-        <div class="flex basis-64 flex-col gap-y-5 bg-white p-6 rounded-2xl">
-          <div>
-            <img src="src/images/icon-brand-recognition.svg" alt="">
+          <!--Container Cards-->
+          <div class="flex gap-6 flex-wrap items-center justify-center relative z-10 mt-10">
+            <!--Linha-->
+            <div class="h-1.5 w-full bg-blue-400 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-10">
+            </div>
+            <!--Card 1-->
+            <div class="flex basis-64 flex-col gap-y-5 bg-white p-6 rounded-2xl relative">
+              <div class="flex items-center justify-center bg-purple-950 w-16 h-16 rounded-full absolute -top-8 left-8">
+                <img src="src/images/icon-brand-recognition.svg" alt="" class="w-1/2 h-1/2"/>
+              </div>
+              <h3 class="pt-10 text-gray-950 font-extrabold text-xl">Brand Recognition</h3>
+              <p class="text-base text-gray-400 font-medium">
+                Boost your brand recognition with each click. Generic links don’t
+                mean a thing. Branded links help instil confidence in your
+                content.
+              </p>
+            </div>
+            <!--Card 2-->
+            <div class="flex basis-64 flex-col gap-y-5 bg-white p-6 rounded-2xl relative mt-10">
+              <div class="flex items-center justify-center bg-purple-950 w-16 h-16 rounded-full absolute -top-8 left-8">
+                <img src="src/images/icon-detailed-records.svg" alt="" class="w-1/2 h-1/2"/>
+              </div>
+              <h3 class="pt-10 text-gray-950 font-extrabold text-xl">Detailed Records</h3>
+              <p class="text-base text-gray-400 font-medium">
+                Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.
+              </p>
+            </div>
+            <!--Card 3-->
+            <div class="flex basis-64 flex-col gap-y-5 bg-white p-6 rounded-2xl relative mt-20">
+              <div class="flex items-center justify-center bg-purple-950 w-16 h-16 rounded-full absolute -top-8 left-8">
+                <img src="src/images/icon-fully-customizable.svg" alt="" class="w-1/2 h-1/2"/>
+              </div>
+              <h3 class="pt-10 text-gray-950 font-extrabold text-xl">Fully Customizable</h3>
+              <p class="text-base text-gray-400 font-medium">
+                Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.
+              </p>
+            </div>
           </div>
-          <h3>Brand Recognition</h3>
-          <p>
-            Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.
-          </p>
-        </div>
-      </div>
-    </section>
+        </section>
 
-  </main>
-  
-  
-  
+        <!--Secao 3-->
+        <section class="flex flex-col items-center justify-center gap-y-4 w-full bg-purple-950 bg-[url(/src/images/bg-boost-desktop.svg)] bg-cover bg-no-repeat p-10">
+          <h2 class="text-5xl font-bold text-white">Boost your links today</h2>
+          <button class="bg-blue-400 text-white font-bold p-5 rounded-4xl">Get Started</button>
+        </section>
+    </main>
 
-  
-
-
-  <!-- 
-Shorten a link here...
-
-  Shorten It!
-
-  
-
-  
-
-  
-
-  
-
-  Detailed Records
-
-  Gain insights into who is clicking your links. Knowing when and where 
-  people engage with your content helps inform better decisions.
-
-  Fully Customizable
-
-  Improve brand awareness and content discoverability through customizable 
-  links, supercharging audience engagement.
-
-  Boost your links today
-
-  Get Started
-
+    <!-- 
   Features
 
   Link Shortening
@@ -141,10 +149,12 @@ Shorten a link here...
   Our Team
   Careers
   Contact -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>
